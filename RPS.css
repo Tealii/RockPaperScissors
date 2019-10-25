@@ -1,0 +1,81 @@
+
+            body{
+                background-color: hsl(0, 68%, 64%);
+            }
+
+           h1{
+               display: flex;
+               justify-content: center;
+               font-family: "Fredericka the Great";
+               font-size: 50px;
+               background-color: ivory;
+               border-radius: 20px;
+               width: auto;
+               align-items: center;
+           }
+
+            .RPSHeader{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 100px;
+            }
+   
+            .playerIcons{
+                width: 200px;
+                height: 200px;
+                padding-top: 10px;
+                background-color: lightsalmon;
+                border-radius: 95px;
+            }
+
+            .playerIcons:hover{
+                background-color: ivory;
+            }
+
+            .playOptionIcon{
+                width: 200x;
+                height: 200px;
+                background-color: lightsalmon;
+                padding-right: 50px;
+                padding-left: 50px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 50px;
+                }
+
+            .playOptionIcon:hover{
+                background-color:lightblue;
+            }
+
+            .container1, .container2, .container3{
+                /*background-color: crimson;*/
+                display: flex;
+                justify-content: center;
+                justify-content: space-evenly;
+                width: auto;
+            }
+
+            .potatoRoboCap{
+                text-align: center;
+                font-family: "Fredericka the Great";
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            .scoreHeader{
+                font-family: "Fredericka the Great";
+                font-size: 50px;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+
+            .playItemsCap{
+                text-align: center;
+                font-family: "Fredericka the Great";
+                font-size: 25px;
+            }
+
+            .iconCredit{
+                text-align: center;
+            }
+            

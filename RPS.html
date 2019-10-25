@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rock, Paper, Scissors!</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
+        <link href="RPS.css" type="text/css" rel="stylesheet">
+
+    </head>
+    
+    <body>
+        <div class="mainContain"><!--CONTAINER-MAIN--><!--may not need th is div actually..we'll see-->
+            <!--trying to do flex-->
+            <h1 class="RPSHeader"><span>ROCK.</span><span>PAPER?</span><span>SCISSOR!</span></h1>
+
+            <!--CONTAINER1-->
+            <div class="container1"><!--We need to get these aligned--check-->
+
+                <div><img class="playerIcons" src="potato.svg" alt="potato">
+                    <pre class="potatoRoboCap">You.. <br> A POTATO.</pre></div>
+
+                <div id="playItem"><img class="playOptionIcon" src="wheel.svg" alt="stone wheel">
+                    <pre class="playItemsCap">I'm a Rock Wheel!</pre></div>
+
+                <div><img class="playerIcons" src="robot.svg" alt="robot">
+                    <pre class="potatoRoboCap">Computer;<br>Superior.</pre></div>
+
+            </div>
+
+            <!--CONTAINER2-->
+            <div class="container2"><!--need these aligned-->
+
+                <div><h1 class="scoreHeader">Score:</h1></div>
+
+                <div><img class="playOptionIcon" src="paper-plane.svg" alt="paper-plane">
+                    <pre class="playItemsCap">I'm a Paper Plane!</pre></div>
+
+                <div><h1 class="scoreHeader">Score:</h1></div>
+
+            </div>
+
+            <!--CONTAINER3-->
+            <div class="container3">
+
+                <div><img class="playOptionIcon" src="scissors.svg" alt="scissors">
+                 <pre class="playItemsCap">I'm a..<br>Well.. Scissors.</pre></div>
+
+            </div>
+            
+
+        </div><!--CONTAINER-->
+
+
+
+
+
+
+
+
+    <!--credit for all icons-->  
+        <div class="iconCredit">Icons made by <a href="https://www.flaticon.com/authors/freepik"
+             title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"         
+                title="Flaticon">www.flaticon.com</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+ //JavaScript goes here!
+            //This is for The Odin Project JS Rock, Paper, Scissors!
+
+            let playItems = [
+                "Rock",
+                "Paper",
+                "Scissors"
+            ];
+
+            function computerPlay(){
+                return playItems;
+            }
+
+            function playerPlay(){
+                return prompt( "Rock, Paper, Scissors?:" );
+            }
+
+            function playRound(computerSelection, playerSelection){
+                computerSelection = computerPlay();
+                
+                if (computerSelection == playerSelection){
+                    alert( " You tied! On to the next round. ");
+                } 
+                else if ( computerSelection == "rock" && playerSelection == "paper"){
+                    alert( " You win! Paper beats Rock! ");
+                } 
+                else if ( computerSelection == "rock" && playerSelection == "scissors"){
+                    alert( " You lose! Rock smashes Scissors! ");
+                } 
+                else if ( computerSelection == "paper" && playerSelection == "rock"){
+                    alert( " You lose! Paper covers Rock! ");
+                } 
+                else if ( computerSelection == "paper" && playerSelection == "scissors"){
+                    alert( " You win! Scissors cut Paper! " );
+                } 
+                else if ( computerSelection == "scissors" && playerSelection == "rock"){
+                    alert( " You win! Rock smashes Scissors! " );
+                } 
+                else if ( computerSelection == "scissors" && playerSelection == "paper"){
+                    alert( " You lose! Scissors cut Paper! " );
+                } 
+                }
+            
+
+
+
+            const playerSelection = "rock"
+            const computerSelection = computerPlay()
+            console.log(playRound(playerSelection, computerSelection))
+            
+
+
+
+
+        </script>
+
+    </body>
+
+</html>
