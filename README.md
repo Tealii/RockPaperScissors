@@ -1,7 +1,6 @@
 # RockPaperScissors
 Game of Rock Paper Scissors - Project from the Odin Project.
 
-Was a little hasty - forgot to remove some of my own comments to self.
-The JS works fine (referring to the comment I forgot to delete..)
+Just. You know..ignore everything except the "NEW finished".
 
-Was going to link to JS like with the CSS...but also forgot to do that too lol...So I'm just leaving it as is.
+Bad or pointless commits? I don't know..But the finished product is there! heh heh.
